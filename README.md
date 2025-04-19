@@ -77,6 +77,22 @@ The project is implemented using a Python script (`svm_optimization.py` - *you c
     * Uses `matplotlib` to plot both the score of each individual iteration and the best score found so far against the iteration number (1 to 100).
     * The plot is displayed during execution and saved as a PNG file (e.g., `convergence_graph_sample_SX_pendigits.png`).
 
+## 4. Result Table
+
+| Sample     |   Best Accuracy | Best Kernel   |    Best C |   Best Gamma |
+|:-----------|----------------:|:--------------|----------:|-------------:|
+| S1         |          0.9961 | rbf           |   5.62793 |    0.0473499 |
+| S2         |          0.9961 | rbf           |  12.5511  |    0.0594873 |
+| S3         |          0.9951 | rbf           | 240.133   |    0.0923696 |
+| S4         |          0.9967 | rbf           |   2.35709 |    0.0700782 |
+| S5         |          0.9961 | rbf           |   5.55375 |    0.0702962 |
+| S6         |          0.9951 | rbf           |  36.2394  |    0.0905468 |
+| S7         |          0.9976 | rbf           |  22.2996  |    0.0881138 |
+| S8         |          0.9936 | rbf           |   6.95859 |    0.0216093 |
+| S9         |          0.9973 | rbf           |  10.1932  |    0.0980293 |
+| S10        |          0.9951 | rbf           |  12.0572  |    0.0511758 |
+
+
 **Discussion:**
 
 * The results table typically shows high accuracy (often >98-99%) for the Pen Digits dataset with an optimized RBF SVM, but highlights potential variability in performance and optimal hyperparameters across different random train-test splits. This underscores the importance of cross-validation and multiple runs for robust model evaluation.
